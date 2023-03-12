@@ -99,7 +99,7 @@ public class FlightBooking {
 
 
 
-    public enum Tripsouce {
+    public enum TripSouce {
         NANJING(1),
         BEIJING(2),
         SHANGHAI(3),
@@ -107,23 +107,23 @@ public class FlightBooking {
         HELSINKI(5),
         PARIS(6) ;
         public final int num;
-        private Tripsouce(int num){
+        private TripSouce(int num){
         this.num = num;
      }
-     public Tripsouce valueof(int num){
+     public TripSouce valueof(int num){
         switch(num){
             case 1:
-            return Tripsouce.NANJING;
+            return TripSouce.NANJING;
             case 2:
-            return Tripsouce.BEIJING;
+            return TripSouce.BEIJING;
             case 3:
-            return Tripsouce.SHANGHAI;
+            return TripSouce.SHANGHAI;
             case 4:
-            return Tripsouce.OULU;
+            return TripSouce.OULU;
             case 5:
-            return Tripsouce.HELSINKI;
+            return TripSouce.HELSINKI;
             case 6:
-            return Tripsouce.PARIS;
+            return TripSouce.PARIS;
             default:
             return null;
         }
@@ -485,7 +485,7 @@ public class FlightBooking {
     }
     public void setTotalTicketPrice(double  totalTicketPrice )
     {
-        this.totalTicketPrice = (returnTicketPrice + departingTicketPrice)*totalPassengers;
+        this.totalTicketPrice =  departingTicketPrice * 2 *totalPassengers;
     }
 
 
@@ -550,7 +550,7 @@ public class FlightBooking {
         
     }
     public String toString()
-    {return ("Dear " + passengerFullName + ". Thank you for booking your flight with " + flightCompany + "." + "\n" +
+    {return ("Thank you for booking your flight with " + passengerFullName + ". Thank you for booking your flight with " + flightCompany + "." + "\n" +
        "Following are the details of your booking and the trip:" + "\n" + 
         "Ticket Number: " + ticketNumber + "\n" + 
         "From " + tripSource + " to " + tripDestination + "\n" +
