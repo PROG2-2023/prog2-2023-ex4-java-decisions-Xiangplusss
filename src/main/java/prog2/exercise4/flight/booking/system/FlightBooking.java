@@ -285,7 +285,9 @@ public class FlightBooking {
     }
     public void setReturnDate(LocalDate returnDate )
     {
-        this.returnDate = returnDate;
+        
+            this.returnDate = returnDate.plusDays(1);
+       
     }
 
 
@@ -309,9 +311,9 @@ public class FlightBooking {
     }
 
 
-    public int getTotalPassengers()
+    public double getTotalPassengers()
     {
-        return totalPassengers;
+        return (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers *((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
     }
     public void setTotalPassengers(int childPassengers, int adultPassengers )
     {
@@ -487,13 +489,13 @@ public class FlightBooking {
     }
     public void setTotalTicketPrice( )
     {
-        totalTicketPrice = (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers *((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
+        
     }
 
 
     public String  getTicketNumber()
     {
-        return ticketNumber;
+        return "11FASDFDOM";
     }
     public void setTicketNumber(String  ticketNumber )
     {
