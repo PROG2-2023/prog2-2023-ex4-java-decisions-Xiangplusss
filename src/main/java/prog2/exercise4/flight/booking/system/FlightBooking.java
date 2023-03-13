@@ -287,7 +287,7 @@ public class FlightBooking {
     {
         
             this.returnDate = returnDate.plusDays(1);
-       
+        
     }
 
 
@@ -311,9 +311,9 @@ public class FlightBooking {
     }
 
 
-    public double getTotalPassengers()
+    public int getTotalPassengers()
     {
-        return (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers *((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
+        return totalPassengers;
     }
     public void setTotalPassengers(int childPassengers, int adultPassengers )
     {
@@ -485,7 +485,7 @@ public class FlightBooking {
 
     public double  getTotalTicketPrice()
     {
-        return totalTicketPrice;
+        return (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers*((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
     }
     public void setTotalTicketPrice( )
     {
