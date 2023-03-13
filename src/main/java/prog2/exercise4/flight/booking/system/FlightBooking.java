@@ -477,7 +477,7 @@ public class FlightBooking {
     }
     public void setReturnTicketPrice( )
     {
-    
+       
     }
 
 
@@ -487,7 +487,7 @@ public class FlightBooking {
     }
     public void setTotalTicketPrice( )
     {
-        
+        totalTicketPrice = (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers *((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
     }
 
 
