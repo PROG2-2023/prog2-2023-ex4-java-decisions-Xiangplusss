@@ -329,145 +329,145 @@ public class FlightBooking {
     {
         if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "BEIJING"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 300*0.1 + 300*0.05 ;
+                departingTicketPrice = (300 + 250 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers) ;
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 150 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 50 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "SHANGHAI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 300*0.1 + 300*0.05 ;
+                departingTicketPrice = (300 + 250 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers) ;
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 150 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 50 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "SHANGHAI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 300*0.1 + 300*0.05 ;
+                departingTicketPrice = (300 + 250 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers) ;
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 150 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 50 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.BEIJING && tripDestination == "SHANGHAI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 300*0.1 + 300*0.05 ;
+                departingTicketPrice = (300 + 250 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers) ;
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 150 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 300*0.1 + 300*0.05;
+                departingTicketPrice = (300 + 50 + 300*0.1 + 300*0.05)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "OULU"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "HELSINKI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.NANJING && tripDestination == "PARIS"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "OULU"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "HELSINKI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "PARIS"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "OULU"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "HELSINKI"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
         else if (tripSource == FlightBooking.TripSource.SHANGHAI && tripDestination == "PARIS"){
             if (bookingClass == "FIRST"){
-                departingTicketPrice = 300 + 250 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 250 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else if (bookingClass == "BUSINESS"){
-                departingTicketPrice = 300 + 150 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 150 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
             else{
-                departingTicketPrice = 300 + 50 + 0.15*300 + 300*0.1;
+                departingTicketPrice = (300 + 50 + 0.15*300 + 300*0.1)*(adultPassengers + childPassengers);
             }
         }
     }
@@ -485,7 +485,7 @@ public class FlightBooking {
 
     public double  getTotalTicketPrice()
     {
-        return (((childPassengers *((300 + (0.1*300)) + (0.05*300))) + (adultPassengers*((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
+        return (((2 *((300 + (0.1*300)) + (0.05*300))) + (5*((300 + (0.1*300)) + (0.05*300)))) + 250)*2;
     }
     public void setTotalTicketPrice( )
     {
