@@ -25,7 +25,7 @@ public class FlightBooking {
     String tripType;
      
      
-    public FlightBooking(String aNull, LocalDate depart, LocalDate returnDate, int i, int j , String bk) {
+    public FlightBooking(String aNull, LocalDate depart, LocalDate returnDate, int i, int j , String bk ,String ts) {
         this.passengerFullName = aNull;
         this.departureDate = depart;
         this.returnDate = returnDate;
@@ -34,8 +34,8 @@ public class FlightBooking {
     }
 
     public enum TripType {
-        One_way(1),
-        Return(2);
+        ONE_WAY(1),
+        RETURN(2);
         public final int num;
         private TripType(int num){
         this.num = num;
@@ -43,9 +43,9 @@ public class FlightBooking {
      public TripType valueof(int num){
         switch(num){
             case 1:
-            return TripType.One_way;
+            return TripType.ONE_WAY;
             case 2:
-            return TripType.Return;
+            return TripType.RETURN;
             default:
             return null;
         }
@@ -99,7 +99,7 @@ public class FlightBooking {
 
 
 
-    public enum TripSouce {
+    public enum TripSource {
         NANJING(1),
         BEIJING(2),
         SHANGHAI(3),
@@ -107,23 +107,23 @@ public class FlightBooking {
         HELSINKI(5),
         PARIS(6) ;
         public final int num;
-        private TripSouce(int num){
+        private TripSource(int num){
         this.num = num;
      }
-     public TripSouce valueof(int num){
+     public TripSource valueof(int num){
         switch(num){
             case 1:
-            return TripSouce.NANJING;
+            return TripSource.NANJING;
             case 2:
-            return TripSouce.BEIJING;
+            return TripSource.BEIJING;
             case 3:
-            return TripSouce.SHANGHAI;
+            return TripSource.SHANGHAI;
             case 4:
-            return TripSouce.OULU;
+            return TripSource.OULU;
             case 5:
-            return TripSouce.HELSINKI;
+            return TripSource.HELSINKI;
             case 6:
-            return TripSouce.PARIS;
+            return TripSource.PARIS;
             default:
             return null;
         }
@@ -495,7 +495,7 @@ public class FlightBooking {
     }
     public void setTicketNumber(String  ticketNumber )
     {
-        if (tripType == "One_way"){
+        if (tripType == "ONE_WAY"){
             if (bookingClass == "FIRST"){
                 if ((tripSource == "NANJING" && tripDestination == "BEIJING" ) || ( tripSource == "NANJING" && tripDestination == "SHANGHAI")||(tripSource == "SHANGHAI"&& tripDestination == "BEIJING" )||(tripSource == "OULU"&&tripDestination == "HELSINKI")){
                     ticketNumber = "11F1234DOM";
